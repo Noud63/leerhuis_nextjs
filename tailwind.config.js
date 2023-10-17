@@ -1,0 +1,20 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        papyrus: [ 'PAPYRUS']
+      },
+      screens : {
+        hamburger: "1100px",
+        herotext: "1200px"
+      },
+    },
+  },
+  plugins: [],
+};
