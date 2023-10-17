@@ -1,7 +1,12 @@
 import Overons from "@/components/Overons";
 import Image from "next/image";
-import wandelaars2 from "../public/images/wandelaars2.png"
+import wandelaars2 from "../public/images/wandelaars2.png";
+import muiderkerk1 from "../public/images/muiderkerk4.jpg";
+import muiderkerk2 from "../public/images/muiderkerk.jpg";
+import muiderkerk3 from "../public/images/muiderkerk6.jpg";
+import muiderkerk4 from "../public/images/muiderkerk7.jpg";
 import Totop from "@/components/Totop";
+
 export default function Home() {
   return (
     <>
@@ -36,33 +41,87 @@ export default function Home() {
             </div>
           </div>
 
-          <Image src={wandelaars2} width={280} height={100} />
+          <Image src={wandelaars2} width={280} height={100} alt="" />
         </div>
       </section>
 
-      {/* <div className="w-full h-[40px] bg-[#cad1cc]"></div> */}
-
-      <div className="w-full h-[700px] flex flex-row max-hamburger:flex-col">
+      <section className="w-full h-[700px] flex flex-row max-hamburger:flex-col">
         <div className="w-1/2 h-[700px] bg-[url('../public/images/overonsbg.png')] bg-no-repeat p-20 text-red-800 max-hamburger:w-full">
-          <span className="w-full flex justify-center text-2xl font-semibold">Lorem Ipsum, where does it come from? </span>
+          <span className="w-full flex justify-center text-2xl font-semibold">
+            Lorem Ipsum, where does it come from?{" "}
+          </span>
           <br />
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. <br />Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source.<br />Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. <br />This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32.
+          it over 2000 years old. <br />
+          Richard McClintock, a Latin professor at Hampden-Sydney College in
+          Virginia, looked up one of the more obscure Latin words, consectetur,
+          from a Lorem Ipsum passage, and going through the cites of the word in
+          classical literature, discovered the undoubtable source.
+          <br />
+          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
+          in 45 BC. <br />
+          This book is a treatise on the theory of ethics, very popular during
+          the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+          amet..", comes from a line in section 1.10.32.
         </div>
-        <div className="w-1/2 h-[700px] bg-black/90 bg-[url('../public/images/overonsbg.png')] bg-no-repeat bg-right max-hamburger:w-full">
-          2
+
+        <div
+          className="w-1/2 h-[700px] bg-black/90 flex items-center justify-center
+           bg-[url('../public/images/overonsbg.png')] bg-no-repeat bg-right max-hamburger:w-full"
+        >
+          <div className="w-auto grid grid-cols-3 grid-rows-2 justify-center items-center gap-9 ">
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk2}
+                alt="muiderkerk"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk3}
+                alt="muiderkerk"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk4}
+                alt="muiderkerk"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk1}
+                alt="muiderkerk"
+                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk1}
+                alt="muiderkerk"
+                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk2}
+                alt="muiderkerk"
+                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="w-full h-[700px] bg-[#cad1cc] text-white text-4xl flex items-center justify-center"></div>
 
