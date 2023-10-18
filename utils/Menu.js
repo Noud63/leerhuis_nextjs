@@ -12,7 +12,7 @@ const navLinks = [
   {
     id: 2,
     name: "Agenda",
-    href: "#home",
+    href: "#agenda",
     submenu: [
       { title: "Agenda", href: "#agenda" },
       { title: "Recent" },
@@ -32,10 +32,10 @@ const navLinks = [
   {
     id: 4,
     name: "Activiteiten",
-    href: "#agenda",
+    href: "#activiteiten",
     submenu: [
-      { title: "Activiteiten", href: "#agenda" },
-      { title: "Agenda" },
+      { title: "Activiteiten", href: "#activiteiten" },
+      { title: "Agenda", href: "#agenda" },
       { title: "Programma" },
     ],
   },

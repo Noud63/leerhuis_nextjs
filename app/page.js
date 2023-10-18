@@ -26,7 +26,7 @@ export default function Home() {
           className="w-[500px] flex flex-col items-center max-md:flex-col absolute right-20 top-[165px] rounded-lg
         bg-gradient-to-b from-[#cad1cc] to-[#a7b0a9] pt-8 pb-10 shadow-md border-t border-white max-herotext:hidden"
         >
-          <span className="w-80 text-2xl text-green-950 flex justify-center font-semibold border-b border-green-950 pb-2">
+          <span className="w-80 text-xl text-green-950 flex justify-center font-semibold border-b border-green-950 pb-2">
             Over het Leerhuis
           </span>
           <div className="w-full flex flex-row justify-center max-md:flex-col">
@@ -45,42 +45,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full h-[700px] flex flex-row max-hamburger:flex-col">
-        <div className="w-1/2 h-[700px] bg-[url('../public/images/overonsbg.png')] bg-no-repeat p-20 text-red-800 max-hamburger:w-full">
-          <span className="w-full flex justify-center text-2xl font-semibold">
+      <section className="w-full h-[700px] flex flex-row max-herotext:flex-col max-herotext:h-auto">
+        <div className="w-1/2 h-[700px] bg-[url('../public/images/overonsbg.png')] bg-no-repeat py-20 px-20 max-herotext:w-full max-herotext:h-auto">
+          <span className="w-full flex justify-center text-xl  text-red-800 font-semibold">
             Lorem Ipsum, where does it come from?{" "}
           </span>
           <br />
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. <br />
-          Richard McClintock, a Latin professor at Hampden-Sydney College in
-          Virginia, looked up one of the more obscure Latin words, consectetur,
-          from a Lorem Ipsum passage, and going through the cites of the word in
-          classical literature, discovered the undoubtable source.
-          <br />
-          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-          in 45 BC. <br />
-          This book is a treatise on the theory of ethics, very popular during
-          the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-          amet..", comes from a line in section 1.10.32.
+          <div className="text-red-800 mt-8">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. <br />
+            Richard McClintock, a Latin professor at Hampden-Sydney College in
+            Virginia, looked up one of the more obscure Latin words,
+            consectetur, from a Lorem Ipsum passage, and going through the cites
+            of the word in classical literature, discovered the undoubtable
+            source.
+            <br />
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+            Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+            written in 45 BC. <br />
+            This book is a treatise on the theory of ethics, very popular during
+            the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+            sit amet..", comes from a line in section 1.10.32.
+          </div>
         </div>
 
         <div
           className="w-1/2 h-[700px] bg-black/90 flex items-center justify-center
-           bg-[url('../public/images/overonsbg.png')] bg-no-repeat bg-right max-hamburger:w-full"
+           bg-[url('../public/images/overonsbg.png')] bg-no-repeat bg-right max-herotext:w-full max-herotext:h-auto py-20"
         >
-          <div className="w-auto grid grid-cols-3 grid-rows-2 justify-center items-center gap-9 ">
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
-              <Image
-                src={muiderkerk2}
-                alt="muiderkerk"
-                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
-
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+          <div className="w-auto grid grid-cols-3 grid-rows-2 justify-center items-center gap-9 max-thumbs:grid-cols-2 max-thumbs:gap-4">
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
               <Image
                 src={muiderkerk3}
                 alt="muiderkerk"
@@ -88,7 +83,15 @@ export default function Home() {
               />
             </div>
 
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+              <Image
+                src={muiderkerk2}
+                alt="muiderkerk"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
               <Image
                 src={muiderkerk4}
                 alt="muiderkerk"
@@ -96,47 +99,53 @@ export default function Home() {
               />
             </div>
 
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
               <Image
                 src={muiderkerk1}
                 alt="muiderkerk"
-                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
 
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
               <Image
-                src={muiderkerk1}
+                src={muiderkerk3}
                 alt="muiderkerk"
-                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
 
-            <div className="w-60 h-60 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
+            <div className="w-40 h-40 text-white flex justify-center items-center bg-[#a7b0a9] p-2">
               <Image
                 src={muiderkerk2}
                 alt="muiderkerk"
-                className="object-fill h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
+                className="object-cover h-full w-auto grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <div className="w-full h-[700px] bg-[#cad1cc] text-white text-4xl flex items-center justify-center"></div>
+      <div
+        id="agenda"
+        className="w-full h-[700px] bg-[#cad1cc] text-4xl flex items-center justify-center text-green-950"
+      >
+        Agenda
+      </div>
 
       <Overons />
 
       <div className="w-full h-[700px] bg-[url('../public/images/muiderkerk3.jpg')] bg-center"></div>
+
       <div
-        id="agenda"
+        id="activiteiten"
         className="w-full h-[700px] bg-white text-green-950/40 text-4xl flex items-center justify-center"
       >
         Activiteiten
       </div>
       <div
         id="contact"
-        className="w-full h-[700px] bg-green-950/30 text-white text-4xl flex items-center justify-center"
+        className="w-full h-[700px] bg-green-950/30 text-green-950 text-4xl flex items-center justify-center"
       >
         contact
       </div>

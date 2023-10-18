@@ -54,7 +54,7 @@
 }
 
 .btn_menu {
-  @apply w-[180px] border-b-2 border-lime-900 shadow-lg flex justify-center p-1 cursor-pointer text-lime-950 text-base font-medium;
+  @apply w-[180px] border-b-2 border-lime-900 shadow-lg flex justify-center p-1 cursor-pointer text-lime-950 text-base;
 }
 
 /* width */

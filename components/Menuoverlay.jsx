@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import close from '../public/icons/close.png'
 
 const Menuoverlay = ({setShowMenuOverlay, showMenuOverlay}) => {
 
@@ -16,10 +18,10 @@ const Menuoverlay = ({setShowMenuOverlay, showMenuOverlay}) => {
     >
       Menu overlay
       <div
-        className="absolute text-2xl text-green-950 right-10 top-10"
+        className="absolute text-green-950 right-10 top-10 cursor-pointer"
         onClick={closeMenu}
       >
-        X
+        <Image src={close} width={35} height={35} alt=""/>
       </div>
     </div>
   );

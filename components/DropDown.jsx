@@ -18,7 +18,7 @@ const Dropdown = ({item, submenu}) => {
     <>
       <div
         key={item.id}
-        className="btn_menu relative tracking-widest"
+        className="btn_menu relative tracking-widest font-medium"
         onMouseOver={showMenu}
         onMouseLeave={closeMenu}
       >
@@ -36,7 +36,7 @@ const Dropdown = ({item, submenu}) => {
             submenu.map((item, index) => (
               <ul
                 key={index}
-                className="w-full flex items-start flex-col py-2 text-green-950"
+                className="w-full flex items-start flex-col py-2 text-green-950 text-md font-normal"
               >
                 <li className="w-full flex justify-center h-10 cursor-pointer border-b border-green-950 tracking-normal">
                   <a href={item.href}>{item.title}</a>

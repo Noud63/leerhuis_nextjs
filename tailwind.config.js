@@ -12,7 +12,8 @@ module.exports = {
       },
       screens : {
         hamburger: "1100px",
-        herotext: "1200px"
+        herotext: "1200px",
+        thumbs: "650px"
       },
     },
   },
